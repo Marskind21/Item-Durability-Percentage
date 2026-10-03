@@ -1,0 +1,46 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made by EnderMars21",
+	"textures": {
+		"particle": "item_durability_percentage:item/numbers/empty"
+	},
+	"elements": [
+		{
+			"from": [8, 3, 0],
+			"to": [12, 9, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 6], "texture": "#digit", "tintindex": 0}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_righthand": {
+			"scale": [0, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"scale": [0, 0, 0]
+		},
+		"ground": {
+			"scale": [0, 0, 0]
+		},
+		"gui": {
+			"rotation": [0, -180, 0]
+		},
+		"head": {
+			"scale": [0, 0, 0]
+		},
+		"fixed": {
+			"scale": [0, 0, 0]
+		},
+		"on_shelf": {
+			"scale": [0, 0, 0]
+		}
+	}
+}

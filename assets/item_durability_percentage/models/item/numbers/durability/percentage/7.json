@@ -1,0 +1,7 @@
+{
+	"parent": "item_durability_percentage:item/numbers/durability/template_2_digit",
+	"textures": {
+		"digit_1": "item_durability_percentage:item/numbers/percent",
+		"digit_2": "item_durability_percentage:item/numbers/7"
+	}
+}

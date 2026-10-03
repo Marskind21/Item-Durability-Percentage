@@ -1,0 +1,561 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"cases": [
+			{
+				"model": {
+					"type": "minecraft:composite",
+					"models": [
+						{
+							"type": "minecraft:condition",
+							"on_false": {
+								"type": "minecraft:model",
+								"model": "minecraft:item/orange_bundle"
+							},
+							"on_true": {
+								"type": "minecraft:composite",
+								"models": [
+									{
+										"type": "minecraft:model",
+										"model": "minecraft:item/orange_bundle_open_back"
+									},
+									{
+										"type": "minecraft:bundle/selected_item"
+									},
+									{
+										"type": "minecraft:model",
+										"model": "minecraft:item/orange_bundle_open_front"
+									}
+								]
+							},
+							"property": "minecraft:bundle/has_selected_item"
+						},
+						{
+							"type": "minecraft:range_dispatch",
+							"property": "minecraft:bundle/fullness",
+							"scale": 64,
+							"fallback": { "type": "minecraft:empty" },
+							"entries": [
+								{
+									"threshold": 1, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 2, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 3, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 4, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 5, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 6, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 7, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 8, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 9, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 10, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 11, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 12, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 13, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 14, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 15, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 16, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 17, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 18, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 19, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 20, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 21, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 22, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 23, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 24, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 25, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 26, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 27, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 28, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 29, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 30, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 31, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 32, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 33, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 34, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 35, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 36, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 37, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 38, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 39, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 40, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 41, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 42, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 43, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 44, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 45, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 46, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 47, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 48, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 49, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 50, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 51, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 52, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 53, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 54, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								},
+								{
+									"threshold": 55, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5" }
+										]
+									}
+								},
+								{
+									"threshold": 56, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6" }
+										]
+									}
+								},
+								{
+									"threshold": 57, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/7" }
+										]
+									}
+								},
+								{
+									"threshold": 58, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/8" }
+										]
+									}
+								},
+								{
+									"threshold": 59, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/5x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/9" }
+										]
+									}
+								},
+								{
+									"threshold": 60, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/0" }
+										]
+									}
+								},
+								{
+									"threshold": 61, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/1" }
+										]
+									}
+								},
+								{
+									"threshold": 62, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/2" }
+										]
+									}
+								},
+								{
+									"threshold": 63, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/3" }
+										]
+									}
+								},
+								{
+									"threshold": 64, "model": { 
+										"type": "minecraft:composite", "models": [
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/6x" },
+											{ "type": "minecraft:model", "model": "item_durability_percentage:item/numbers/durability/absolute/4" }
+										]
+									}
+								}
+							],
+							"transformation": {
+								"left_rotation": [0, 0, 0, 1],
+								"right_rotation": [0, 0, 0, 1],
+								"scale": [1, 1, 1],
+								"translation": [0, 0, -1]
+							}
+						}
+					]
+				},
+				"when": "gui"
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/orange_bundle"
+		},
+		"property": "minecraft:display_context"
+	}
+}

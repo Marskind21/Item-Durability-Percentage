@@ -1,0 +1,8 @@
+{
+	"parent": "item_durability_percentage:item/numbers/durability/template_3_digit",
+	"textures": {
+		"digit_1": "item_durability_percentage:item/numbers/percent",
+		"digit_2": "item_durability_percentage:item/numbers/1",
+		"digit_3": "item_durability_percentage:item/numbers/8"
+	}
+}

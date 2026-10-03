@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/crossbow",
+	"textures": {
+		"layer0": "item_durability_percentage:item/crossbow_tipped_arrow_tip"
+	}
+}
